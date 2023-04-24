@@ -31,6 +31,7 @@
       color: rgb(136, 3, 172);
     }
     img {
+      max-height: 8rem;
       object-fit: cover;
       object-position: center center;
       // flex-shrink: 0;
