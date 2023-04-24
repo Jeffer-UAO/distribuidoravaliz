@@ -7,18 +7,18 @@ export function Contact(props) {
   return (
     <>
       <div className={styles.container}>
-        <h1>SURTIPRECIOS LA 15</h1>
+        <h1>Distribuidora VaLiz</h1>
         <div className={styles.phone}>
           <h5>Líneas de atención</h5>
           <ul>
             
-            <li>(+57) 313 636 4253</li>
+            <li>(+57) ---</li>
           </ul>
         </div>
 
         <div className={styles.adress}>
           <h5>Ubicación:</h5>
-          <p>Cll 15 # 9-65, Centro de Cali</p>
+          <p>--- Centro de Cali</p>
         </div>
       </div>
       <FooterApp />

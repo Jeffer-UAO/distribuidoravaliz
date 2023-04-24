@@ -6,9 +6,9 @@ export function AboutUs() {
       <div className={styles.about}>
         <h1>Nosotros</h1>
         <p>
-          ¡Bienvenidos a Surtiprecios la 15! Somos una empresa dedicada a
+          ¡Bienvenidos a Distribuiodra VaLiz! Somos una empresa dedicada a
           ofrecer a nuestros clientes la mejor experiencia de compra. En
-          Surtiprecios la 15, nos enfocamos en brindar una amplia variedad de
+          Distribuidora VaLiz, nos enfocamos en brindar una amplia variedad de
           productos a precios accesibles y competitivos, sin sacrificar la
           calidad de los mismos. Nuestro compromiso es ofrecer un servicio
           excepcional a nuestros clientes, generando la mayor rapidez en la
@@ -18,7 +18,7 @@ export function AboutUs() {
           colombiana, comprometida con el desarrollo del país y la generación de
           empleo local. Trabajamos con proveedores confiables y de calidad, para
           garantizar que nuestros clientes reciban productos de primera línea.
-          En Surtiprecios la 15, estamos en constante evolución para mejorar
+          En Distribuidora VaLiz, estamos en constante evolución para mejorar
           nuestros procesos y ofrecer un servicio cada vez mejor. ¡Gracias por
           confiar en nosotros!
         </p>
@@ -27,7 +27,7 @@ export function AboutUs() {
       <div className={styles.mision}>
         <h5>Misión</h5>
         <p>
-          Nuestra misión en Surtiprecios la 15 es brindar a nuestros clientes
+          Nuestra misión en Distribuidora VaLiz es brindar a nuestros clientes
           una experiencia de compra fácil, segura y confiable. Nos esforzamos
           por ofrecer una amplia variedad de productos de alta calidad a precios
           accesibles, para que nuestros clientes puedan satisfacer todas sus
@@ -36,7 +36,7 @@ export function AboutUs() {
           arduamente para garantizar que todos nuestros clientes reciban un
           servicio excepcional. Estamos comprometidos con la transparencia, la
           honestidad y la integridad en todas nuestras operaciones. Además, en
-          Surtiprecios la 15 valoramos la sostenibilidad y el impacto positivo
+          Distribuidora VaLiz valoramos la sostenibilidad y el impacto positivo
           en nuestro entorno. Trabajamos con proveedores locales y buscamos
           minimizar nuestro impacto ambiental en todas nuestras operaciones.
           Nuestra misión es convertirnos en la tienda preferida de nuestros
@@ -50,8 +50,7 @@ export function AboutUs() {
       <div className={styles.vision}>
         <h5>Visión</h5>
         <p>
-          En Surtiprecios la 15, nuestra visión es ser líderes en el mercado de
-         Colombia, reconocidos por nuestra calidad,
+          En Distribuidora VaLiz, nuestra visión es ser líderes en Colombia, reconocidos por nuestra calidad,
           servicio excepcional y precios accesibles. Queremos ofrecer una amplia
           gama de productos a precios competitivos, sin comprometer la calidad y
           la atención al cliente. Buscamos ser una empresa innovadora y
@@ -72,13 +71,13 @@ export function AboutUs() {
         <h5>Líneas de atención</h5>
         <ul>
         
-          <li>(+57) 313 636 4253</li>
+          <li>(+57) ---</li>
         </ul>
       </div>
 
       <div className={styles.adress}>
         <h5>Ubicación:</h5>
-        <p>Cll 15 # 9-65, Centro de Cali</p>
+        <p>--- Centro de Cali</p>
       </div>
     </div>
   );
