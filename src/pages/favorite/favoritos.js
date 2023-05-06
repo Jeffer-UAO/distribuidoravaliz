@@ -1,4 +1,4 @@
-import { Advertisement, Footer, FooterApp, PageNone } from "@/components";
+import { Footer, FooterApp, PageNone, Separator } from "@/components";
 import { BasicLayout } from "@/layouts";
 import React from "react";
 
@@ -6,7 +6,7 @@ export default function FavoritePage() {
   return (
     <>
       <BasicLayout>
-        <Advertisement />
+        <Separator />
       </BasicLayout>
 
 

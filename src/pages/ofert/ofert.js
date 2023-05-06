@@ -1,9 +1,9 @@
 import {
-  Advertisement,
-  Footer,
+    Footer,
   FooterApp,
   Promotion,
   NotFound,
+  Separator,
 } from "@/components";
 import { size } from "lodash";
 import { BasicLayout } from "@/layouts";
@@ -16,7 +16,7 @@ export default function OfertPage(props) {
   return (
     <>
       <BasicLayout>
-        <Advertisement />
+        <Separator />
       </BasicLayout>
 
       {hasProduct ? (

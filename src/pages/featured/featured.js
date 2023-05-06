@@ -1,9 +1,9 @@
 import {
-  Advertisement,
-  Footer,
+    Footer,
   FooterApp,
   Exclusive,
   NotFound,
+  Separator,
 } from "@/components";
 import { size } from "lodash";
 import { BasicLayout } from "@/layouts";
@@ -16,7 +16,7 @@ export default function FeaturedPage(props) {
   return (
     <>
       <BasicLayout>
-        <Advertisement />
+        <Separator />
       </BasicLayout>
 
       {hasProduct ? (

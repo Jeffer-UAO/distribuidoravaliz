@@ -1,4 +1,4 @@
-import { Advertisement, Footer, AboutUs, FooterApp } from "@/components";
+import { Footer, AboutUs, FooterApp, Separator } from "@/components";
 import { BasicLayout } from "../../layouts";
 
 export default function AboutHome() {
@@ -7,7 +7,7 @@ export default function AboutHome() {
   return (
     <>
       <BasicLayout>
-        <Advertisement />
+        <Separator />
       </BasicLayout>
 
       <AboutUs />

@@ -1,4 +1,4 @@
-import { Advertisement, Footer, Contact } from "@/components";
+import { Footer, Contact, Separator } from "@/components";
 import { BasicLayout } from "../../layouts";
 
 
@@ -8,7 +8,7 @@ export default function ContactHome() {
   return (
     <>
       <BasicLayout>
-        <Advertisement />
+        <Separator />
       </BasicLayout>
 
       <Contact />
