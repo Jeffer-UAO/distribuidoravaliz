@@ -1,41 +1,36 @@
 import { WhatsApp } from "../WhatsApp";
-
 import styles from "./FooterApp.module.scss";
 import { AiOutlineHome } from "react-icons/ai";
 import { MdOutlineCategory } from "react-icons/md";
 import { MdOutlineLocalOffer } from "react-icons/md";
 import { CiUser } from "react-icons/ci";
-import Link from "next/link";
-import { useState } from "react";
-import { Spinner } from "reactstrap";
 import { BtnLink } from "../Common";
 
 export function FooterApp() {
-  const [isLoading, setIsLoading] = useState(false);
   return (
     <div className={styles.btnWhatsapp}>
       <div className={styles.paneluser}>
         <BtnLink link={"/"} title={"HOME"} logo={<AiOutlineHome size={20} />} />
         <BtnLink
           link={"/featured"}
-          title={"EXCLUSIVO"}
+          title={"EXCL"}
           logo={<MdOutlineCategory size={20} />}
         />
 
         <WhatsApp
-          phoneNumber="+57---"
+          phoneNumber="+573103900666"
           message="Hola, me gustaría obtener más información sobre sus productos."
         />
         <BtnLink
           link={"/ofert"}
-          title={"OFERTAS"}
+          title={"OFER"}
           logo={<MdOutlineLocalOffer size={20} />}
         />
         <BtnLink
           link={
-            "https://distribuidoravaliz.catalogointeractivo.com.co/admin-dashboard/"
+            "https://majos.catalogointeractivo.com.co/admin-dashboard/"
           }
-          title={"ADMIN"}
+          title={"ADMI"}
           logo={<CiUser size={20} />}
         />
       </div>

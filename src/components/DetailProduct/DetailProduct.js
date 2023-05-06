@@ -15,15 +15,16 @@ export function DetailProduct(props) {
     setProductData(product[0]);
   }, []);
 
-  const changeDetail = (data) => {
-    setProductData(data);
+  const changeDetail = (data) => {  
+    setProductData(data);    
     window.scrollTo(0, 0);
   };
 
   if (product) {
     return (
-      <div className={styles.detailProduct}>
-        <div className={styles.product}>   
+      <div className={styles.detailProduct} >
+        <div className={styles.product} id="seccion-1">
+          
           <CardImg alt="Card image cap" src={BASE_NAME + productData.images} />
 
           <div className={styles.description}>
@@ -32,9 +33,10 @@ export function DetailProduct(props) {
               {productData.price1 !== null && <h6>$ {productData.price1}</h6>}
             </CardTitle>
             <p>{productData.description}</p>
-            <div>
+
+            <div className={styles.whatsapp}>
               <WhatsApp
-                phoneNumber="+57---"
+                phoneNumber="+573103900666"
                 message={
                   BASE_NAME +
                   productData.images +
@@ -46,6 +48,7 @@ export function DetailProduct(props) {
                 }
               />
             </div>
+            
           </div>
         </div>
 
@@ -76,7 +79,7 @@ export function DetailProduct(props) {
             ))}
           </div>
         </div>
-        <FooterApp />
+      
       </div>
     );
   } else {

@@ -1,5 +1,5 @@
 .footer {
-  background-color: rgb(233, 239, 252);
+  background-color: #1e2126a8;
   padding: 20px;
   margin-top: 5rem;
   .content{
@@ -10,27 +10,30 @@
     padding-bottom: 10px;
 
     h6 {
+      font-family: 'Times New Roman';
       padding: 6px;
       font-size: 15px;
       font-weight: 600;
-      color: rgb(198, 8, 182);
+         color: #ffffff !important;
       text-align: center;
     }
     p {
       font-size: 14px;
       font-weight: 600;
-      color: rgb(2, 6, 137);
+   
     }
     .copyright {
       text-align: center;
-      color: rgba(3, 0, 103, 0.333);
+      color: #f9fbff62;;
       padding-bottom: 40px;
+      
     }
     .link {
       
       display: grid;
       gap: 20px;
       grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+      
       
       p {
         text-transform: uppercase;

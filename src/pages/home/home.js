@@ -3,15 +3,15 @@ import { Categories } from "@/api/category";
 import { Products } from "@/api/products";
 import {
   ListCategories,
-  Advertisement,
   Footer,
   Promotion,
   Exclusive,
   FooterApp,
+  Separator,
 } from "@/components";
+import styles from "./home.module.scss"
 
 import { BasicLayout } from "../../layouts";
-import { useAuth } from "@/hooks/useAuth";
 
 const categoriesCtrl = new Categories();
 const productsCtrl = new Products();
@@ -44,31 +44,29 @@ export default function HomePage() {
 
   if (products !== null) {
     return (
-      <>
+      <div className={styles.home}>
         <BasicLayout>
-          <Advertisement />
+          <Separator />
+          <Separator />
+          <ListCategories categories={categories} />
+
+          <Promotion products={products} />
+          <hr />
+          <Exclusive products={products} />
+
+          <FooterApp />
+          <Footer />
         </BasicLayout>
-
-        <ListCategories categories={categories} />
-        <hr />
-        <Promotion products={products} />
-        <hr />
-        <Exclusive products={products} />
-
-        <FooterApp />
-        <Footer />
-      </>
+      </div>
     );
   } else {
     return (
       <>
         <BasicLayout>
-          <Advertisement />
+          <ListCategories categories={categories} />
+          <FooterApp />
+          <Footer />
         </BasicLayout>
-
-        <ListCategories categories={categories} />
-        <FooterApp />
-        <Footer />
       </>
     );
   }
