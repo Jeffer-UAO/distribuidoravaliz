@@ -28,7 +28,7 @@ export function FooterApp() {
         />
         <BtnLink
           link={
-            "https://majos.catalogointeractivo.com.co/admin-dashboard/"
+            "https://distibuidoravaliz.catalogointeractivo.com.co/admin-dashboard/"
           }
           title={"ADMI"}
           logo={<CiUser size={20} />}
