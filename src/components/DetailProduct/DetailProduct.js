@@ -5,7 +5,6 @@ import { BASE_NAME } from "@/config/constants";
 import { CardImg, CardTitle } from "reactstrap";
 import styles from "./DetailProduct.module.scss";
 import { WhatsApp } from "../WhatsApp";
-import { FooterApp } from "../FooterApp";
 
 export function DetailProduct(props) {
   const [productData, setProductData] = useState("");
@@ -27,14 +26,7 @@ export function DetailProduct(props) {
           
           <CardImg alt="Card image cap" src={BASE_NAME + productData.images} />
 
-          <div className={styles.description}>
-            <CardTitle className={styles.title}>
-              <h5>{productData.name_extend}</h5>
-              {productData.price1 !== null && <h6>$ {productData.price1}</h6>}
-            </CardTitle>
-            <p>{productData.description}</p>
-
-            <div className={styles.whatsapp}>
+          <div className={styles.whatsapp}>
               <WhatsApp
                 phoneNumber="+573103900666"
                 message={
@@ -48,6 +40,14 @@ export function DetailProduct(props) {
                 }
               />
             </div>
+          <div className={styles.description}>
+            <CardTitle className={styles.title}>
+              <h5>{productData.name_extend}</h5>
+              {productData.price1 !== null && <h6>$ {productData.price1}</h6>}
+            </CardTitle>
+            <p>{productData.description}</p>
+
+            
             
           </div>
         </div>

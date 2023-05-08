@@ -1,20 +1,21 @@
 import { BasicLayout } from "@/layouts";
-import { Advertisement, Separator } from "@/components";
+import { Advertisement, FooterApp, Separator } from "@/components";
 import { DetailProduct } from "@/components";
 import { Footer } from "@/components";
+import styles from "./product.module.scss";
 
 export default function ProductPage(props) {
   const { product, relate } = props;
 
   return (
-    <div>
+    <div className={styles.product}>
       <BasicLayout>
-      <Separator />
+        <Separator />
+        <Separator />
+        <DetailProduct product={product} relate={relate} />
+        <FooterApp />
+        <Footer />
       </BasicLayout>
-
-      <DetailProduct product={product} relate={relate} />
-
-      <Footer />
     </div>
   );
 }

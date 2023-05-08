@@ -1,5 +1,4 @@
 .detailProduct {
-  background-color: rgb(240, 240, 240);
   width: 100%;
   img {
     object-fit: cover;
@@ -13,14 +12,21 @@
       text-align: center;
       text-transform: capitalize;
     }
+    .whatsapp {
+      position: absolute;
+     margin: -3rem 1rem;
+    }
     .description {
-      background-color: white;
+      background-color: rgba(255, 255, 255, 0.177);
       padding: 10px;
-
-      .whatsapp {
-        position: absolute;
-        bottom: 13rem;
+      p {
+        color: white;
       }
+      h5,
+      h6 {
+        color: white;
+        font-weight: 800;
+      }     
     }
     a {
       display: flex;
@@ -29,11 +35,14 @@
   }
 
   .relate {
-    padding: 10px;
+    margin: 3rem 0.5rem;
+
     p {
       margin-top: 0px;
       margin-bottom: 10px;
       font-size: 1.2rem;
+      font-weight: 800;
+      color: white;
     }
   }
 }
@@ -44,9 +53,8 @@
   grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
 
   &__product2 {
-    background-color: rgb(254, 254, 254);
+    background-color: rgba(254, 254, 254, 0.29);
     position: relative;
-
     border-radius: 6px;
 
     .name {
@@ -65,11 +73,14 @@
       font-size: 14px;
       font-weight: 400;
       text-transform: uppercase;
+      color: white;
     }
 
     h6 {
       font-size: 15px;
       line-height: 2;
+      color: white;
+      font-weight: 800;
     }
   }
 }
